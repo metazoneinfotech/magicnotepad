@@ -25,8 +25,8 @@ import org.mz.eit.magicnotepad.bean.LoginCredentials;
  */
 public class LoginAuthService {
     
-    private static final String userId = "vc1234";
-    private static final String password = "vc1234";
+    private static final String USER_ID = "vc1234";
+    private static final String PASSWORD = "vc1234";
     private static final org.apache.log4j.Logger LOGGER = LogManager.getLogger(LoginAuthService.class.getName());
     /**
      * This method is called when user clicked on Login Button.
@@ -36,8 +36,8 @@ public class LoginAuthService {
      */
     public boolean authenticateUser(LoginCredentials userCredentials){
       boolean authorised ;
-      authorised = userCredentials.getUserId().equals(userId) && userCredentials.getPassword().equals(password);
-      LOGGER.info("User Authenticated");
+      authorised = (userCredentials.getUserId().equals(USER_ID) && userCredentials.getPassword().equals(PASSWORD));
+      LOGGER.info("User Authorised "+authorised);
       return authorised;
     }
 }

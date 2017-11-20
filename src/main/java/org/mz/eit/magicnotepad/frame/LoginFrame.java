@@ -64,16 +64,16 @@ public class LoginFrame extends javax.swing.JFrame {
 
         adminLoginCotainerPanel.setFocusable(false);
 
-        loginBttn.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        loginBttn.setFont(new java.awt.Font(Constant.FONT_SANS_SERIF, 1, 14)); // NOI18N
         loginBttn.setForeground(new java.awt.Color(0, 0, 153));
         loginBttn.setText("LOGIN");
         loginBttn.addActionListener((ActionEvent evt)->
                 loginBttnActionPerformed());
 
-        userIdLabel.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        userIdLabel.setFont(new java.awt.Font(Constant.FONT_SANS_SERIF, 1, 14)); // NOI18N
         userIdLabel.setText("USER ID");
 
-        pwdLabel.setFont(new java.awt.Font("SansSerif", 1, 14)); // NOI18N
+        pwdLabel.setFont(new java.awt.Font(Constant.FONT_SANS_SERIF, 1, 14)); // NOI18N
         pwdLabel.setText("PASSWORD");
 
         javax.swing.GroupLayout adminLoginCotainerPanelLayout = new javax.swing.GroupLayout(adminLoginCotainerPanel);
