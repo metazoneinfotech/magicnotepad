@@ -21,12 +21,14 @@ package org.mz.eit.magicnotepad.constant;
  * @author NK Chitkara
  */
 public interface Constant {
-    static String MAGIC_ICON_PATH = System.getProperty("user.dir")+"/target/classes/images/magic-icon.png";
-    static String SETTINGS_ICON_PATH = System.getProperty("user.dir")+"/target/classes/images/settings-icon.jpg";
-    static String SETTINGS_MENU_ICON_PATH = System.getProperty("user.dir")+"/target/classes/images/settings-menu-icon.jpg";
-    static String PATH_FILE_PATH = System.getProperty("user.dir")+"/target/classes/files/path-file.txt";
-    static String DEFAULT_FILE_PATH = System.getProperty("user.dir")+"/target/classes/files/default-file.txt";
-    static String INCORRECT_LOGIN_MSG = "Incorrect login or password";
-    static String INCORRECT_LOGIN_TITLE = "ERROR";
-    static String FILE_NOT_FOUND_TITLE = "File Not Found!!;Please Select a valid FilePath";
+	String ROOT_PATH=System.getProperty("user.dir");
+	String MAGIC_ICON_PATH = ROOT_PATH+"/target/classes/images/magic-icon.png";
+	String SETTINGS_ICON_PATH = ROOT_PATH+"/target/classes/images/settings-icon.jpg";
+	String SETTINGS_MENU_ICON_PATH = ROOT_PATH+"/target/classes/images/settings-menu-icon.jpg";
+	String PATH_FILE_PATH = ROOT_PATH+"/target/classes/files/path-file.txt";
+	String DEFAULT_FILE_PATH = ROOT_PATH+"/target/classes/files/default-file.txt";
+	String INCORRECT_LOGIN_MSG = "Incorrect login or password";
+	String INCORRECT_LOGIN_TITLE = "ERROR";
+	String FILE_NOT_FOUND_TITLE = "File Not Found!!;Please Select a valid FilePath";
+	String FONT_SANS_SERIF="SansSerif";
 }
